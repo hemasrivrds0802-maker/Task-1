@@ -46,3 +46,50 @@ if a>b:
     print("lesser than other ")
 else:  
     print("not equal")
+num=25
+sqrt_num=num**0.5
+print("The square root",sqrt_num)
+amount=2000
+roi=20
+time=1
+ask=10
+ask="simple interest"
+numer=amount*roi*time
+D=100
+result=numer/D
+print("the simple interest is:",result)
+ask="compound interest"
+result=(amount*((1+(roi/100))**time)-amount)
+print("the compound interest is:",result)
+X=10
+Y=5
+opr="add"
+X+=Y
+print(X)
+X-=2
+Opr="subraction"
+print(X)
+X*=Y
+opr="multiplication"
+print(X)
+X/=Y
+opr="division"
+print(X)
+X%=Y
+opr="exponential"
+print(X)
+a=25
+b=3
+a=a+b
+b=a-b
+a=a-b
+print("a=",a)
+print("b=",b)
+num=8
+cube_root=(num**(1/3))
+print(cube_root)
+number=8523
+l2d=num%100
+print(l2d)
+rl2d=number//100
+print(rl2d)
