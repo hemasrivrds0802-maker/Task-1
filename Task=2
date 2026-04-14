@@ -1,0 +1,108 @@
+#1
+num=int(input("enter a number:"))
+if num%2==0:
+    print("the number is even")
+else:
+    print("the number is odd")
+    
+#2
+age=int(input("enter age:"))
+if age>=18:
+    print("eligible for voting")
+else:
+    print("not eligible")
+
+#3
+mark=int(input("enter your marks:"))
+if mark>=40:
+    print("pass")
+else:
+    print("fail")
+
+#4
+value=int(input("enter a value"))
+if value>0:
+    print("the number is positive:")
+else:
+    print("the number is negative")
+
+#5mark=int(input("enter your mark:"))
+if mark>90:
+    print("grade A")
+elif mark>=75 and mark<=89:
+    print("grade B")
+elif mark>=50 and mark<=74:
+    print("grade c")
+else:
+    print("fail")
+
+#6
+fir=int(input("enter the first number"))
+sec=int(input("enter the second number"))
+thi=int(input("enter the third number"))
+tot=[fir,sec,thi]
+print (max(tot))
+
+#7
+num=int(input("enter number(1to7:"))
+if num==1:
+    print("monday")
+elif num==2:
+    print("tuesday")
+elif num==3:
+    print("wednesday")
+elif num==4:
+    print("thursday")
+elif num==5:
+    print("friday")
+elif num==6:
+    print("saturday")
+elif num==7:
+    print("sunday")
+else:
+    print("invalid number")
+
+#8
+a=int(input("enter the first number:"))
+b=int(input("enter second number:"))
+op=str(input("enter arithmetic operation:"))
+if op=="+":
+    print(a+b)
+elif op=="-":
+    print(a-b)
+elif op=="*":
+    print(a*b)
+elif op=="/":
+    print(a/b)
+elif op=="//":
+    print(a//b)
+elif op=="%":
+    print(a%b)
+elif op=="**":
+    print(a**b)
+else:
+    print("invalid operation")
+
+#9
+username="hema"
+password="feb,123"
+usr=str(input("enter username:"))
+pwoed=str(input("enter password:"))
+if usr==username:
+    if pword==password:
+        print("log in success")
+    else:
+        print("incorrect password")
+    else:
+        print("invalid statement")
+
+#10
+signal=str(input("enter signal colour:"))
+if signal=="red":
+    print("stop")
+elif signal=="yellow":
+    print("get ready")
+elif signal=="green":
+    print("go")
+else:
+    print("error:invalid signal!!")
