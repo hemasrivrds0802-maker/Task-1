@@ -1,11 +1,53 @@
+#1
 a="hemasri"
 print(a.upper( ))
+
+#2
 b="I AM A STUDENT"
 print(b.casefold( ))
+
+#3
 c="she is my friend"
 print(c.capitalize( ))
+
+#4
 name="Hema"
-age=17
+age="17"
 print(f'{name} is my name ')
 print(f'{age} is my age')
 
+#5
+txt="calculator"
+print(txt.index("l"))
+
+#6
+txt="school life"
+print(txt.find("o"))
+
+#7
+txt="playing"
+print(txt.endswith("ing"))
+
+#8
+txt="h\te\tm\ta"
+print(txt.expandtabs(3))
+
+#9
+txt="sunrise is beautiful"
+print(txt.encode("UTF-16"))
+
+#10
+txt="1234"
+print(txt.isdigit())
+
+#11
+txt="hema0802"
+print(txt.isalnum())
+
+#12
+txt="divi"
+print(txt.isascii())
+
+#13
+txt="rasi"
+print(txt.isalpha())
