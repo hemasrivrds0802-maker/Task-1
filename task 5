@@ -1,0 +1,11 @@
+a="hemasri"
+print(a.upper( ))
+b="I AM A STUDENT"
+print(b.casefold( ))
+c="she is my friend"
+print(c.capitalize( ))
+name="Hema"
+age=17
+print(f'{name} is my name ')
+print(f'{age} is my age')
+
