@@ -1,0 +1,73 @@
+#1 greeting
+def greet():
+    print("Hello!")
+greet()
+
+#2 add
+def add(a,b):
+    print("add:",a+b)
+a=int(input("enter a value:"))
+b=int(input("enter a value:"))
+add(a,b)
+
+#3 lambda(square)
+square=lambda x:x**2
+print(square(25))
+
+#4 even
+n=int(input("enter a number:"))
+x=list(range(1,n+1))
+even=list(filter(lambda a:a%2==0,x))
+print(even)
+
+#5 multiples of 2
+n=int(input("enter a value:"))
+a=list(range(1,n+1))
+multi=list(map(lambda x:x*2,a))
+print(multi)
+
+#6 factorial
+def factorial(n):
+    n=int(input("enter a value:"))
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+        print(factorial(n))
+
+#7 numbers from 1 to 5 
+print()
+def num():
+    i=1
+    while i<=5:
+        print(i)
+rec()
+
+#8 lambda add
+x=int(input("enter a value:"))
+y=int(input("enter a value:"))
+add=lambda.x,y=x+y
+print(add(x,y))
+
+#9 filter
+n=int(input("enter a value:"))
+a=list(range(1,n+1))    
+five=list(filter(lambda x:x>5,a))
+print(five)
+
+#10 square
+n=int(input("enter a value:"))
+a=list(range(1,n+1))
+sq=list(map(lambda x:x**2,a))
+print(sq)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
