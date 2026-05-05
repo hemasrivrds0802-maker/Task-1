@@ -1,0 +1,87 @@
+#1 math
+import math
+n=int(input("enter a value:"))
+print(math.sqrt(n))
+
+n=int(input("enter a value:"))
+m=int(input("enter a value:"))
+print(math.pow(n,m))
+
+print(math.pi)
+
+x=float(input("enter a value:"))
+print(math.ceil(x))
+print(math.floor(x))
+
+z=int(input("enter a value:"))
+print(math.factorial(z))
+
+
+#3 time module
+import time
+print(time.ctime())
+
+time.sleep(3)
+
+print(time.ctime())
+
+print(time.strftime("%H-%M-%S"))
+
+#4 datetime module
+import datetime as dt
+print(dt.datetime.now())
+
+d=dt.datetime.now()
+
+print(d.date())
+
+print(d.year)
+
+print(d.month)
+(
+print(d.day)
+
+#5 calender
+import calendar as c
+print(c.month(2026,5))
+
+x=int(input("enter a value:"))
+print(c.calendar(x))
+
+print(c.isleap(x))
+
+print(c.monthrange(2026,5))
+
+print(c.weekday(2026,5,13))
+
+#6 random module
+import random as r
+print(r.randint(1,10))
+
+print(r.randint(1,100))
+
+q=[1,2,3,4,5]
+print(r.choice(q))
+
+print(r.uniform(1,10.2))
+
+r.shuffle(q)
+print(q)
+
+#7 pywhatkit
+import pywhatkit as kit
+kit.search("scientists")
+
+kit.playonyt("computer")
+
+kit.playonyt("love songs")
+
+kit.sendwhatmsg("+919342613500","Hello James",14,20)
+
+kit.info("python",lines=3)
+
+
+
+
+
+
