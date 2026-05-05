@@ -1,0 +1,208 @@
+#1 maximum of three numbers
+x=int(input("enter a value:"))
+y=int(input("enter a value:"))
+z=int(input("enter a value:"))
+max_num=lambda x,y,z:max(x,y,z)
+print(max_num(x,y,z))
+#2 even or odd
+
+x=int(input("enter a value:"))
+even_odd=lambda x:"even" if x%2==0 else "odd"
+print(even_odd(x))
+
+#3 divisable by 5
+x=int(input("enter a value:"))
+divisable=lambda x:True if x%5==0 else False
+print(divisable(x))
+
+#4 square and cube
+x=int(input("enter a value:"))
+sq_cu=lambda x:(x**2,x**3)
+print(sq_cu(x))
+
+#5 last digit
+x=int(input("enter a value:"))
+last_digit=lambda x:x%10
+print(last_digit(x))
+
+#6 positive or negative
+x=int(input("enter a value:"))
+pos_neg=lambda x:"positive" if x>=0 else "negative"
+print(pos_neg(x))
+
+#7 pass or fail
+x=int(input("enter your marks:"))
+pass_fail=lambda x:"pass" if x>=40 else "fail"
+print(pass_fail(x))
+
+#8 multiply
+x=int(input("enter a value:"))
+y=int(input("enter a value:"))
+z=int(input("enter a value:"))
+multiply=lambda x,y,z=x*y*z
+print(multiply(x,y,z))
+
+#9 length
+s=input("enter a string:")
+length=lambda s:len(s)
+print(length(s))
+
+#10 temperature conversion
+T=float(input("enter temperature in celsius:"))
+c_to_f=lambda T:(T*9/5)+32
+print(c_to_f(T))
+
+#11 square
+nums=[1,2,3]
+sq=list(map(lambda n:n**2,nums))
+print(nums)
+
+#12 double
+val=[2,4,6]
+dou=list(map(lambda v:v*2,val))
+print(dou)
+
+#13 add 
+w=[5,6,7]
+add=list(map(lambda x:x+1,w))
+print(add)
+
+#14 string
+a=[1,2,3]
+str=list(map(lambda x:str(x),a))
+result(str)
+
+#15 cube
+c=[1,2,3]
+cube=list(map(lambda x:x**3,c))
+print(cube)
+
+#16 uppercase
+u=["a","b","c"]
+case=list(map(lambda x:uppercase(x),u))
+print(case)
+
+#17 str length
+str=["hi","hello","bye"]
+length=list(map(lambda x:len(x),str))
+print(length)
+
+#18 combine
+list1=[1,2,3]
+list2=[4,5,6]
+combine=list(map(lambda x,y=x+y,list1,list2))
+print(combine)
+
+#19 multiply
+a=[1,2,3]
+multi=list(map(lambda x:x*3,a))
+print(multi)
+
+#20 subract
+s=[5,6,7]
+sub=list(map(lambda x:x-2,s))
+print(sub)
+
+#21 even
+q=[1,2,3,4,5]
+even=list(filter(lambda x:x%2==0,q))
+print(even)
+
+#22 odd
+q=[1,2,3,4,5]
+odd=list(filter(lambda x:x%2!=0,q))
+print(odd)
+
+#23 greater than 5
+q=[2,6,8,1]
+five=list(filter(lambda x:x>5,q))
+print(five)
+
+#24 less than 10
+q=[5,12,7,20]
+ten=list(filter(lambda x:x<10,q))
+print(ten)
+
+#25 positive
+q=[1,-2,3,-4]
+positive=list(filter(lambda x:x>0,q))
+print(positive)
+
+#26 negative
+q=[1,-2,3,-4]
+negative=list(filter(lambda x:x<0,q))
+print(negative)
+
+#27 divisable by 3
+q=[3,5,9,10]
+div=list(filter(lambda x%3==0,q))
+print(div)
+
+#28 divisable by 5
+q=[10,12,15,7]
+five=list(filter(lambda x:x%5==0,q))
+print(five)
+
+#29 between 1 and 10
+q=[0,5,12,8]
+bet=list(filter(lambda x:0<x<10,q))
+print(bet)
+
+#30 seven
+q=[7,2,7,4]
+seven=list(filter(lambda x:x==7,q))
+print(seven)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
