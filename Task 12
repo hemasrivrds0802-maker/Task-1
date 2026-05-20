@@ -64,6 +64,117 @@ obj=D()
 obj.fun1()
 obj.fun2()
 obj.fun3()
+# Abstraction
+#1
+from abc import ABC,abstractmethod
+class vehicle(ABC):
+    @abstractmethod
+    def start(self):
+        pass
+class car(vehicle):
+    def start(self):
+        print("car starts with key")
+c=car()
+c.start()
+
+#2
+from abc import ABC,abstractmethod
+class ATM(ABC):
+    @abstractmethod
+    def withdraw(self):
+        pass
+class BankATM(ATM):
+    def withdraw(self):
+        print("successfully done")
+a=bankATM()
+a.withdraw()
+
+#3
+from abc import ABC,abstractmethod
+class Mobile(ABC):
+    @abstractmethod
+    def call(self):
+        pass
+class Android(Mobile):
+    def call(self):
+        print("calling.....")
+m=Android()
+m.call()
+
+#polymorphism
+#Function overloading
+class calculator:
+    def add(self,a,b,c=0):
+        return a+b+c
+obj=calculator()
+print(obj.add(10,20))
+arguments
+print(obj.add(10,20,30))
+arguments
+
+#Function overriding
+class Animal:
+    def sound(self):
+        print("Animal makes sounds")
+class dog(Animal):
+    def sound(self):
+        print("Dog barks")
+class cat(Animal):
+    def sound(self):
+        print(":cat mewos")
+d=dog()
+c=cat()
+d.sound()
+c.sound()
+
+#Encapsulation
+#Public
+class student:
+    name="HEMA"
+s=student()
+print(s.name)
+
+#Private
+class student:
+    __mark=100
+s=student()
+print(s.__mark)
+
+#Protected
+class student:
+    _age=18
+    s=student()
+    print(s._age)
+
+#combined
+class student:
+    name="Maths"
+    _age=18
+    __marks=100
+    def private(self):
+        print("Private:",self.__marks)
+    s=student()
+    print("Public:",s.name)
+    print("Protected:",s._age)
+    print("Private:",s.__marks)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         
     
