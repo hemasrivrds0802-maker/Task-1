@@ -1,0 +1,97 @@
+#1 run time errors
+#try except block
+try:
+    a=10
+    b=0
+    print(a/b)
+except zerodivisonerror:
+    print("cannot divide by zero")
+    
+try:
+    print(name)
+except nameerror:
+    print("variable is not found")
+    
+try:
+    a=10
+    b="hello"
+    print(a+b)
+except typeerror:
+    print("Different data types")
+    
+#try except else block
+try:
+    num=[1,2,3,4]
+    print(num[5])
+except Indexerror:
+    print("Index out of range")
+    
+try:
+    value=int("hello")
+except valueerror:
+    print("Invalid value")
+    
+try:
+    a=int(input("enter a value"))
+    result=10/a
+except zerodivisonerror:
+    print("cannot divide by zero")
+except valueerror:
+    print("value error")
+else:
+    print("Result is:"result)
+    
+try:
+    marks=int(input("enter a value"))
+except valueerror:
+    print("please enter numbers only")
+else:
+    if marks>=35:
+        print("Pass")
+    else:
+        print("Fail")
+    
+#2 File handling
+#writting
+file=open("sample.txt","w")
+
+file.write("Hello world")
+file.write("\nWelcome to python")
+file.close()
+
+print("File created successfully")
+
+#reading
+file=open("sample.txt","r")
+content=file.read()
+print(content)
+
+file.close()
+
+# appending
+file=open("sample.txt","a")
+file.write("\nThis line is added later")
+file.close()
+print("Data appended successfully")
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
